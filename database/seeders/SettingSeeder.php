@@ -37,6 +37,12 @@ class SettingSeeder extends Seeder
             'site_url' => 'https://hands-mogilev.by',
             'google_verification' => 'wQ7P5dcjWfVY5so5H4nZkZZMm-wHPKb7DoKyp6BQTEE',
             'yandex_verification' => '45702c9329eecbd1',
+
+            // Google Реклама: идентификатор тега (AW-…) и ярлык конверсии
+            // «Отправка формы для потенциальных клиентов». Тег ставится на все
+            // страницы, конверсия засчитывается по клику на кнопку онлайн-записи.
+            'google_ads_id' => 'AW-18436540373',
+            'google_ads_conversion_label' => 'SNklCLbN1fAcENWPnddE',
         ];
 
         foreach ($settings as $key => $value) {

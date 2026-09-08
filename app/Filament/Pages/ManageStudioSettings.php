@@ -158,6 +158,20 @@ class ManageStudioSettings extends Page
                         ->placeholder('20'),
                 ]),
 
+            Section::make('Аналитика и реклама')
+                ->description('Google Реклама. Тег ставится на все страницы сайта; конверсия засчитывается по клику на кнопку онлайн-записи (YClients).')
+                ->columns(2)
+                ->schema([
+                    TextInput::make('google_ads_id')
+                        ->label('Google Ads — идентификатор тега')
+                        ->placeholder('AW-XXXXXXXXXX')
+                        ->helperText('Из письма Google: тег вида AW-…. Пусто — тег не подключается.'),
+                    TextInput::make('google_ads_conversion_label')
+                        ->label('Ярлык конверсии')
+                        ->placeholder('AbC-D_efG…')
+                        ->helperText('Часть после «/» в send_to, напр. из AW-…/SNkl… берётся SNkl…'),
+                ]),
+
             Section::make('Оплата')
                 ->description('Образец документа об оплате — ссылка появится в футере в разделе «Документы»')
                 ->schema([
