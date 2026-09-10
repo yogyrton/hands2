@@ -36,7 +36,7 @@ class SettingSeeder extends Seeder
             // SEO: домен и коды верификации поисковиков.
             'site_url' => 'https://hands-mogilev.by',
             'google_verification' => 'wQ7P5dcjWfVY5so5H4nZkZZMm-wHPKb7DoKyp6BQTEE',
-            'yandex_verification' => '45702c9329eecbd1',
+            'yandex_verification' => '77020b79be7982fa',
 
             // Google Реклама: идентификатор тега (AW-…) и ярлык конверсии
             // «Отправка формы для потенциальных клиентов». Тег ставится на все

@@ -170,6 +170,12 @@ class ManageStudioSettings extends Page
                         ->label('Ярлык конверсии')
                         ->placeholder('AbC-D_efG…')
                         ->helperText('Часть после «/» в send_to, напр. из AW-…/SNkl… берётся SNkl…'),
+                    TextInput::make('google_verification')
+                        ->label('Google — код подтверждения прав')
+                        ->helperText('Значение meta google-site-verification из Google Search Console.'),
+                    TextInput::make('yandex_verification')
+                        ->label('Яндекс — код подтверждения прав')
+                        ->helperText('Значение meta yandex-verification из Яндекс.Вебмастера.'),
                 ]),
 
             Section::make('Оплата')
